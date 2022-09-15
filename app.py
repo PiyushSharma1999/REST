@@ -16,7 +16,7 @@ app.config['DEBUG'] = True
 
 # rest of connection code using the connection string `uri`
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE', 'sqlite:///data.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = ('postgresql://geprupmmvjgxcu:7754341cc3c611dbf0b68479a13c1b3d98bf671f43a8c945999c35d0255430d9@ec2-34-203-182-65.compute-1.amazonaws.com:5432/dffeameid5uq75', 'sqlite:///data.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'jose'
 api = Api(app)
